@@ -9,6 +9,7 @@ module.exports = async function CheckEcoStats(guildid, userid) {
         const EcoStats = {
             VaultBalance: profile.Vault,
             WalletBalance: profile.Wallet,
+            LastWorked: profile.LastWorkedMS,
         }
 
         return EcoStats;

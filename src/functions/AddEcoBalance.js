@@ -20,6 +20,7 @@ module.exports = async function AddEcoBalance(userid, guild, amount, walletOrVau
                 User: userexists.id,
                 Vault: amount,
                 Wallet: 0,
+                LastWorkedMS: 0,
             });
         } else {
             await EcoUser.create({
@@ -27,6 +28,7 @@ module.exports = async function AddEcoBalance(userid, guild, amount, walletOrVau
                 User: userexists.id,
                 Vault: 0,
                 Wallet: amount,
+                LastWorkedMS: 0,
             });
         }
     }

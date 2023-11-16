@@ -5,4 +5,5 @@ module.exports = model('ecouser', new Schema({
     User: String,
     Wallet: Number,
     Vault: Number,
+    LastWorkedMS: Number,
 }))
